@@ -91,8 +91,8 @@
       NSGlobalDomain.ApplePressAndHoldEnabled = false;
       NSGlobalDomain.AppleScrollerPagingBehavior = true;
       NSGlobalDomain."com.apple.keyboard.fnState" = true;
-      NSGlobalDomain.InitialKeyRepeat = 1;
-      NSGlobalDomain.KeyRepeat = 1;
+      # NSGlobalDomain.InitialKeyRepeat = 10;
+      # NSGlobalDomain.KeyRepeat = 10;
       NSGlobalDomain.NSUseAnimatedFocusRing = false;
       NSGlobalDomain.NSAutomaticCapitalizationEnabled = false;
       NSGlobalDomain.NSAutomaticDashSubstitutionEnabled = false;

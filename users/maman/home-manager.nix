@@ -106,7 +106,7 @@ in {
       dquote = str: "\"" + str + "\"";
       makeBinPathList = map (path: path + "/bin");
     in ''
-             fish_add_path --move --prepend --path ${lib.concatMapStringsSep " " dquote (makeBinPathList osConfig.environment.profiles)}
+      fish_add_path --move --prepend --path ${lib.concatMapStringsSep " " dquote (makeBinPathList osConfig.environment.profiles)}
       set fish_user_paths $fish_user_paths
     '';
   };
@@ -176,6 +176,7 @@ in {
     enableFishIntegration = true;
     globalConfig = {
       tools = {
+        adb = "latest";
         node = "lts";
         python = "3.11.7";
         github-cli = "latest";
@@ -188,6 +189,9 @@ in {
         bun = "latest";
         flyctl = "0.1.147";
         "npm:@withgraphite/graphite-cli" = "stable";
+      };
+      plugins = {
+        adb = "https://github.com/vic/asdf-link.git";
       };
       settings = {
         experimental = true;
