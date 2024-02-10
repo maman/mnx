@@ -124,6 +124,22 @@ in {
     enable = true;
     nix-direnv.enable = true;
   };
+  programs.ssh =
+    {
+      enable = true;
+    }
+    // (
+      if isDarwin
+      then {
+        extraConfig = ''
+          IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+        '';
+        extraOptionOverrides = {
+          Include = "~/.orbstack/ssh/config";
+        };
+      }
+      else {}
+    );
   programs.git = {
     enable = true;
     userName = "Achmad Mahardi";
