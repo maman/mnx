@@ -40,6 +40,7 @@ in {
       pkgs.gnutar
       pkgs.grc
       pkgs.jq
+      pkgs.mosh
       pkgs.nixd
       pkgs.ripgrep
       pkgs.tree
