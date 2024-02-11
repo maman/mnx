@@ -34,7 +34,6 @@
       "1password-cli"
       "android-studio"
       "arc"
-      "bettertouchtool"
       "cleanmymac"
       "commandq"
       "eloston-chromium"
