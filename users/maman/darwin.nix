@@ -39,6 +39,7 @@
       "commandq"
       "eloston-chromium"
       "handbrake"
+      "karabiner-elements"
       "keepingyouawake"
       "macs-fan-control"
       "minisim"
