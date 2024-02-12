@@ -28,6 +28,8 @@
       "zlib"
 
       "pinentry-mac"
+
+      "watchman"
     ];
     casks = [
       "1password"

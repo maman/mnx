@@ -47,7 +47,6 @@ in {
       pkgs.watch
       pkgs.htop
       pkgs.neovim
-      pkgs.watchman
       pkgs.zellij
     ]
     ++ (lib.optionals isDarwin [
@@ -57,6 +56,7 @@ in {
     ++ (lib.optionals isLinux [
       pkgs.pinentry
       pkgs.chromium
+      pkgs.watchman
     ]);
 
   home.sessionVariables = {
