@@ -38,6 +38,7 @@
       "arc"
       "cleanmymac"
       "commandq"
+      "cyberduck"
       "eloston-chromium"
       "handbrake"
       "karabiner-elements"
