@@ -157,6 +157,7 @@ in {
           gpg.format = "ssh";
           "gpg \"ssh\"".program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
           commit.gpgsign = true;
+          core.editor = "/Applications/Komet.app/Contents/MacOS/Komet";
         }
         else {}
       );
