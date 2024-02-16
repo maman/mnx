@@ -36,6 +36,7 @@
       "1password-cli"
       "android-studio"
       "arc"
+      "bettertouchtool"
       "boop"
       "cleanmymac"
       "commandq"
