@@ -206,7 +206,7 @@ in {
         deno = "latest";
         bun = "latest";
         flyctl = "0.1.147";
-        "npm:@withgraphite/graphite-cli" = "stable";
+        "npm:@withgraphite/graphite-cli" = "latest";
       };
       plugins = {
         adb = "https://github.com/vic/asdf-link.git";

@@ -35,6 +35,10 @@
       url = "github:homebrew/homebrew-cask";
       flake = false;
     };
+    marmaduke-chromium = {
+      url = "github:mtslzr/homebrew-marmaduke-chromium";
+      flake = false;
+    };
   };
 
   outputs = {

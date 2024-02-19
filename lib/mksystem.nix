@@ -45,7 +45,22 @@ in
           then inputs.nixos-wsl.nixosModules.wsl
           else {}
         )
-
+      ]
+      ++ (nixpkgs.lib.optionals darwin [
+        nix-homebrew.nix-homebrew
+        {
+          nix-homebrew.enable = true;
+          nix-homebrew.user = "maman";
+          nix-homebrew.taps = {
+            "mtslzr/homebrew-marmaduke-chromium" = inputs.marmaduke-chromium;
+            "homebrew/homebrew-core" = inputs.homebrew-core;
+            "homebrew/homebrew-cask" = inputs.homebrew-cask;
+            "homebrew/homebrew-bundle" = inputs.homebrew-bundle;
+          };
+          nix-homebrew.mutableTaps = false;
+        }
+      ])
+      ++ [
         machineConfig
         userOSConfig
         home-manager.home-manager
@@ -69,18 +84,5 @@ in
             inputs = inputs;
           };
         }
-      ]
-      ++ (nixpkgs.lib.optionals darwin [
-        nix-homebrew.nix-homebrew
-        {
-          nix-homebrew.enable = true;
-          nix-homebrew.user = "maman";
-          nix-homebrew.taps = {
-            "homebrew/homebrew-core" = inputs.homebrew-core;
-            "homebrew/homebrew-bundle" = inputs.homebrew-bundle;
-            "homebrew/homebrew-cask" = inputs.homebrew-cask;
-          };
-          nix-homebrew.mutableTaps = false;
-        }
-      ]);
+      ];
   }

@@ -201,6 +201,22 @@
         "type": "github"
       }
     },
+    "marmaduke-chromium": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1707944741,
+        "narHash": "sha256-f0Tv4cThGp3cgVQkZ2Myx2hhRvFal1/CfyVGaWH/0rA=",
+        "owner": "mtslzr",
+        "repo": "homebrew-marmaduke-chromium",
+        "rev": "216d746da1fb5afd962814787ab3c6869b3752f7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mtslzr",
+        "repo": "homebrew-marmaduke-chromium",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": "nixpkgs"
@@ -326,6 +342,7 @@
         "homebrew-bundle": "homebrew-bundle",
         "homebrew-cask": "homebrew-cask",
         "homebrew-core": "homebrew-core",
+        "marmaduke-chromium": "marmaduke-chromium",
         "nix-homebrew": "nix-homebrew",
         "nixpkgs": "nixpkgs_3",
         "nixpkgs-master": "nixpkgs-master",

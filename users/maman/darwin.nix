@@ -31,6 +31,9 @@
 
       "watchman"
     ];
+    caskArgs = {
+      no_quarantine = true;
+    };
     casks = [
       "1password"
       "1password-cli"
@@ -42,15 +45,16 @@
       "cleanmymac"
       "commandq"
       "cyberduck"
-      "eloston-chromium"
       "handbrake"
       "karabiner-elements"
       "keepingyouawake"
       "komet"
       "macs-fan-control"
+      "marmaduke-chromium"
       "minisim"
       "orbstack"
       "raycast"
+      "sublime-text"
       "tableplus"
       "the-unarchiver"
       "topnotch"
