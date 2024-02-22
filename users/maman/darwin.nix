@@ -27,7 +27,9 @@
       "xz"
       "zlib"
 
+      "mas"
       "pinentry-mac"
+      "reattach-to-user-namespace"
 
       "watchman"
     ];
