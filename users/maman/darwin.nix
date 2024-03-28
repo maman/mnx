@@ -44,6 +44,7 @@
       "bartender"
       "bettertouchtool"
       "boop"
+      "bruno"
       "cleanmymac"
       "commandq"
       "cyberduck"
@@ -54,14 +55,18 @@
       "macs-fan-control"
       "marmaduke-chromium"
       "minisim"
+      "mission-control-plus"
+      "monodraw"
       "orbstack"
       "raycast"
+      "spotify"
       "sublime-text"
       "tableplus"
       "the-unarchiver"
       "topnotch"
       "viscosity"
       "visual-studio-code"
+      "zed"
     ];
   };
 

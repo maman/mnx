@@ -43,10 +43,12 @@ in {
       pkgs.mosh
       pkgs.nixd
       pkgs.ripgrep
+      pkgs.sapling
       pkgs.tree
       pkgs.watch
       pkgs.htop
       pkgs.neovim
+      pkgs.lazygit
       pkgs.zellij
     ]
     ++ (lib.optionals isDarwin [
@@ -218,7 +220,7 @@ in {
   };
 
   home.file = {
-    ".hushlogin".text = "";
     # ".CFUserTextEncoding".text = "0x08000100:0";
+    ".hushlogin".text = "";
   };
 }
