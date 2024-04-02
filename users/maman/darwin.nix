@@ -23,12 +23,14 @@
       "readline"
 
       "gawk"
+      "icu4c"
       "readline"
       "xz"
       "zlib"
 
       "mas"
       "pinentry-mac"
+      "pkg-config"
       "reattach-to-user-namespace"
 
       "watchman"
