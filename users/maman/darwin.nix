@@ -17,6 +17,7 @@
     # builds ruby binary from scratch
     brews = [
       "gmp"
+      "libpq"
       "libyaml"
       "openssl@3"
       "openssl@1.1"
